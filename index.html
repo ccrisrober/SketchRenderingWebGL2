@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<head>
+  		<meta charset="utf-8" />
+  		<title>Sketch rendering in WebGL2</title>
+		<style>
+		#myCanvas {
+	        top: 50%;
+	        left: 42.5%;
+	        margin-top: -512px;
+	        margin-left: -640px;
+	        position: fixed
+		}
+		body {
+			background-color: #eee;
+		}
+		#repo-card__image-wrap {
+		    background-position: center center!important;
+		    background-size: cover!important;
+		}
+		</style>
+	</head>
+	<body>
+	    <canvas id="myCanvas" width="1280" height="1024"></canvas>
+	    <!--<input type="file" id="file-input" />
+		<h3>Contents of the file:</h3>
+		<pre id="file-content"></pre>-->
+
+		<script src="ShaderProgram.js"></script>
+		<script src="camera.js"></script>
+		<script type="text/javascript" src="gl-matrix-min.js"></script>
+		<script type="text/javascript" src="dat.gui.js"></script>
+		<script type="text/javascript" src="Stats.min.js"></script>
+		<script src="app.js"></script>
+		<script type="text/javascript" src="repo-card.min.js"></script>
+		<script>
+			RepoCard
+			.configure({
+				repo: 'SketchRenderingWebGL2',
+				username: 'maldicion069',
+				title: 'Sketch Example in WebGL2',
+				subtitle: '@maldicion069',
+				info: 'Model sketch rendering',
+				thumb: 'url(https://avatars2.githubusercontent.com/u/6024024?v=3&s=600)',
+				background: 'url(t_yyyy_143.jpg)',
+				position: {
+					bottom: 25,
+					right: 25
+				}
+			});
+		</script>
+	</body>
+</html>
